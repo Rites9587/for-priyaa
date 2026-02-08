@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Priya ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h1>Hey Priya 🌸</h1>
+
+    <p class="quote">
+        “Some connections don’t need time,<br>
+        they just need the right moment.”
+    </p>
+
+    <p>
+        From our first conversation on <b>17 September</b>,
+        something felt easy… real.
+    </p>
+
+    <p>
+        You loving food 🍕🍰 tells me one thing —
+        the best moments are meant to be shared.
+    </p>
+
+    <p>
+        And sharing the same birthday,
+        <b>12 April</b>,
+        feels like a beautiful coincidence.
+    </p>
+
+    <h2>Will you be my Valentine? ❤️</h2>
+
+    <div class="buttons">
+        <button class="yes">Yes 💖</button>
+        <button class="no">No 🙈</button>
+    </div>
+</div>
+
+<script>
+    const noBtn = document.querySelector('.no');
+    noBtn.addEventListener('mouseover', () => {
+        noBtn.style.position = 'absolute';
+        noBtn.style.top = Math.random() * 80 + 'vh';
+        noBtn.style.left = Math.random() * 80 + 'vw';
+    });
+
+    document.querySelector('.yes').addEventListener('click', () => {
+        document.body.innerHTML = `
+        <div class="final">
+            <h1>Yay! 💖</h1>
+            <p>
+                This just made my day.<br>
+                I hope we create many more moments together.
+            </p>
+            <h2>Happy Valentine’s Day, Priya ❤️</h2>
+        </div>`;
+    });
+</script>
+
+</body>
+</html>
